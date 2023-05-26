@@ -1,0 +1,633 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#logo {
+  width: 250px;
+}
+
+.main-header {
+  display: flex;
+  padding: 0px 10% 0px 10%; 
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuside {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  align-items: baseline;
+  width: 80%;
+}
+
+.menuside a{
+  text-decoration: none;
+  color:black;
+}
+
+input {
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: 2px solid rgba(111, 107, 107, 0.5);
+}
+
+input:focus {
+  background-color: rgb(213, 222, 231);
+  color: black;
+
+}
+
+#search {
+  position: relative;
+}
+
+::placeholder {
+  color: rgb(151, 150, 150);
+  font-weight: bold;
+}
+
+#searchButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background-color: rgb(93, 171, 93);
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+}
+
+.footer-input {
+  padding: 10px 27px;
+  border-radius: 10px 0 0 10px;
+}
+footer button i {
+  color: white;
+}
+
+.menuside li {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1.3%;
+}
+
+.logoside {
+  width: 15%;
+}
+
+.home {
+  background-image: url("./home.jpg");
+  background-size:cover;
+  height: auto;
+  opacity: 1;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10%;
+  padding: 0px 0 90px 0;
+  border: none;
+}
+
+.left-content h1 {
+  font-size: 60px;
+  color: rgb(63, 159, 63);
+  color: white;
+}
+
+.bg {
+  background-color: rgba(14, 13, 13, 0.5);
+}
+
+.left-content p {
+  font-size: 25px;
+  color: white;
+}
+
+.left-content button {
+  background-color: rgb(66, 146, 66);
+  width: 20%;
+  border-radius: 40px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
+.left-content button:hover {
+  background-color: rgb(28, 143, 28);
+}
+
+.cardholder {
+  width: 80%;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 28%;
+  height: 250px;
+  padding-left: 2%;
+  padding-top: 30px;
+  box-shadow: 2px 2px 10px rgba(187, 183, 183, 0.5),
+    -2px -2px 10px rgba(187, 183, 183, 0.5);
+}
+
+.cardimgs {
+  width: 50px;
+  height: 50px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgb(250, 250, 250);
+  transition: 0.6s;
+}
+
+.about {
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftabout {
+  width: 48%;
+  height: 450px;
+  position: relative;
+}
+
+.abt {
+  width: 60%;
+  height: 400px;
+  border: 10px solid white;
+  outline: 1px solid black;
+  border-radius: 5px;
+}
+
+.imgone {
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+}
+
+.imgtwo {
+  position: absolute;
+  top: 50px;
+  left: 180px;
+  border-radius: 5px;
+}
+
+.rightabout {
+  width: 46%;
+  padding-left: 10px;
+  align-content: space-evenly;
+}
+
+.rightabout button {
+  background-color: rgb(66, 146, 66);
+  width: 30%;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
+.abtlist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.abtlist li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  height: 10px;
+  width: 10px;
+  background-image: url("/home.jpg");
+}
+
+.head {
+  color: rgb(54, 161, 54);
+}
+
+.rightabout h1 {
+  font-size: 45px;
+}
+
+.offer {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 100px 30px 0px 30px;
+}
+
+.offerhead {
+  font-size: 45px;
+}
+
+.offerheadone {
+  color: green;
+}
+
+.ud {
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+.servicecardcontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.servicecard {
+  width: 30%;
+  padding-bottom: 20px;
+  border: 2px solid rgb(232, 230, 230);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(244, 244, 244), -3px -3px 10px rgb(232, 231, 231);
+}
+
+.servicecard:hover {
+  opacity: 0.9;
+  background-color: aliceblue;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+.servicecard img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.servicecard button {
+  background-color: rgb(66, 146, 66);
+  border-radius: 30px;
+  padding: 12px 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
+.servicecard button:hover {
+  background-color: green;
+}
+
+.bookus {
+  display: flex;
+  margin-top: 100px;
+}
+
+.leftbookus {
+  width: 50%;
+}
+
+.leftbookus img {
+  width: 100%;
+  height: 500px;
+  border-radius: 0 10px 10px 0;
+}
+
+.rightbookus {
+  width: 50%;
+  padding: 30px 0 30px 40px;
+  box-shadow: 2px 2px 10px rgb(248, 247, 247), -2px -2px 10px rgb(240, 240, 240);
+}
+
+.status {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.status img {
+  width: 50px;
+  height: 50px;
+}
+
+.box {
+  width: 45%;
+  padding: 10px 0 0 10px;
+  box-shadow: 2px 2px 10px rgb(248, 247, 247), -2px -2px 10px rgb(240, 240, 240);
+}
+
+.imageViewer img {
+  border: 1px solid white;
+  box-shadow: 1px 1px 10px rgb(227, 221, 221);
+  width: 100px;
+  height: 100px;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgb(248, 248, 248);
+}
+
+.new p {
+  padding: 0 40px;
+}
+
+.bookme {
+  margin-top: 60px;
+  background-color: rgb(66, 146, 66);
+  border-radius: 30px;
+  padding: 12px 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
+.bookme:hover {
+  background-color: green;
+  box-shadow: 2px -2px 5px rgb(194, 195, 194), -2px 2px 5px rgb(173, 173, 173);
+}
+
+i {
+  color: green;
+}
+
+.news {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(134, 132, 132);
+}
+
+.middle {
+  color: black;
+  font-size: 25px;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact,
+.contactus {
+  margin-top: 60px;
+  border: 1px solid black;
+  background-color: rgb(41, 117, 41);
+  color: white;
+  padding: 30px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactus {
+  margin-top: 0;
+  background-color: black;
+}
+
+.contactus h1 {
+  font-size: 45px;
+  color: rgb(42, 166, 42);
+}
+
+.contact button {
+  margin-top: 7px;
+  background-color: rgb(226, 224, 224);
+  border-radius: 30px;
+  padding: 12px 30px;
+  color: rgb(92, 91, 91);
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+}
+.contact i {
+  color: white;
+}
+
+.order {
+  display: flex;
+  margin: 10px;
+}
+
+.order span {
+  padding: 5px 8px;
+  border-radius: 50%;
+  border: 1px solid white;
+  align-self: center;
+  background-color: white;
+  margin: 10px;
+}
+
+.order span:hover {
+  background-color: rgb(177, 176, 176);
+  transform: scale(2);
+  transition: 0.8s;
+  transform: rotateX("90");
+}
+.order button:hover {
+  box-shadow: 2px -2px 12px white;
+  transition: 0.2s;
+  background-color: green;
+  color: white;
+}
+.contactus i {
+  color: black;
+}
+
+.footer-contents {
+  padding: 30px 150px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+address {
+  line-height: 1.5rem;
+}
+
+.bar {
+  color: rgb(202, 201, 201);
+  width: 22%;
+  line-height: 2rem;
+  font-size: large;
+  letter-spacing: 0.1rem;
+}
+
+.text-decoration {
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: rgb(240, 243, 240);
+  text-decoration-thickness: 1px;
+}
+
+.bar a {
+  text-decoration: none;
+  color: rgb(202, 201, 201);
+  display: block;
+  line-height: 2rem;
+}
+
+.bar a:hover {
+  color: green;
+}
+
+.bar p {
+  line-height: 1.5rem;
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+.copyright {
+  color: rgb(202, 201, 201);
+  border-top:1px solid rgba(202, 201, 201,0.5);
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+
+.copyright span {
+  color: rgb(59, 151, 59);
+}
+
+.copyright .fa-arrow-up {
+  position: absolute;
+  color: rgb(254, 254, 254);
+  padding: 10px;
+  background-color: rgb(26, 137, 26);
+  border-radius: 50%;
+  top: -2.5rem;
+  right: 3rem;
+}
+
+.copyright .fa-arrow-up:hover {
+  transform: translateY(-5px);
+  transition: 0.8s;
+  background-color: rgb(5, 86, 5);
+}
+
+
+
+@media screen and (max-width:900px) {
+  
+  .footer-flex {
+    flex-direction:column;
+  }
+
+  .bar{
+    width:100%;
+  }
+
+  .order {
+    flex-direction:column;
+    margin:0px;
+  }
+
+  .media{
+    flex-direction:row;
+    margin:10px;
+  }
+
+  .contactus,.contact{
+    flex-direction:column;
+  }
+
+  .fa-solid,#x{
+    font-size:20px;
+  }
+
+  .servicecardcontainer {
+      flex-direction:column;
+  }
+
+  .servicecard {
+    width: 100%;
+    margin-top:20px;
+  }
+
+  .bookus {
+    flex-direction:column;
+  }
+  
+  .leftbookus,.rightbookus{
+    width:100%;
+  }
+
+  .about{
+    flex-direction:column;
+  }
+
+  .leftabout,.rightabout{
+    width:100%;
+    margin-top:40px;
+  }
+
+  .rightabout button{
+    width:50%;
+  }
+
+  .rightabout button:hover{
+    box-shadow:2px 2px 10px rgb(161, 161, 161),-2px -2px 10px rgb(216, 213, 213);
+  }
+
+  .cardholder {
+    flex-direction:column;
+  }
+
+  .card{
+    width:100%;
+    margin-top:30px;
+  }
+
+  .left-content{
+    width:80%;
+    text-align: center;
+  }
+
+  .left-content button{
+    width:40%;
+    margin:auto;
+  }
+
+  .main-header,.menuside{
+    flex-direction:column;
+    align-content:center;
+    align-items: center;
+  }
+  .main-header {
+    padding-left:0px;
+  }
+  .logoside{
+    width:100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
